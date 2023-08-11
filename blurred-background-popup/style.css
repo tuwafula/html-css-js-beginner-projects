@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  justify-content: center;
+  background: url('background.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+
+h1 {
+  font-size: 4rem;
+  /* color: whitesmoke; */
+  font-family: cursive;
+  letter-spacing: 0.2rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.btn {
+  padding: 0.7rem 1rem;
+  width: 12rem;
+  cursor: pointer;
+  background-color: orangered;
+  border-radius: 5px;
+  font-size: 1.2rem;
+}
+
+.btn:hover {
+  filter: brightness(0.8);
+}
+
+/* .active.container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(4px);
+  z-index: 100;
+  transition: all 0.5s;
+} */
+
+/* .active.container {
+  filter: blur(5px) brightness(0.7);
+} */
+
+.popup-container {
+  position: fixed;
+  left: 50%;
+  top: 30%;
+  transform: translateX(-50%);
+  width: 40rem;
+  height: 20rem;
+  background-color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.3rem;
+  background: url('background2.jpg');
+  background-size: cover;
+  border-radius: 10px;
+  box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.7);
+  transition: filter 0.7s;
+}
+
+.active.container {
+  filter: blur(5px) brightness(0.7);
+}
+
+h4 {
+  font-size: 2rem;
+  margin: 0.8rem 0;
+  font-family: cursive;
+  color: green;
+}
+
+label {
+  font-family: cursive;
+  color: green;
+}
+
+.popup-btn {
+  padding: 0.7rem;
+  cursor: pointer;
+  background-color: orangered;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  width: 5rem;
+  border: 2px solid black;
+}
+
+.input {
+  border: 2px solid;
+  padding: 0.7rem;
+  margin: 0.7rem;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.input::placeholder {
+  color: lightgray;
+}
+
+.close-icon {
+  position: absolute;
+  right: 1.3rem;
+  cursor: pointer;
+}
+
+.close-icon:hover {
+  color: red;
+}
+
+.active.popup-container {
+  visibility: hidden;
+}
