@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  justify-content: center;
+  background-color: pink;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+h1 {
+  font-size: 4rem;
+  letter-spacing: 0.1rem;
+  color: whitesmoke;
+  text-shadow: 2px 4px 4px rgba(0, 0, 0, 0.7);
+  white-space: nowrap;
+}
+
+@media screen and (max-width: 500px) {
+  h1 {
+    font-size: 3rem;
+  }
+}
+
+.container {
+  text-align: center;
+}
+.btn {
+  padding: 2rem 3rem;
+  background-color: whitesmoke;
+  border: none;
+  margin: 0.3rem;
+  font-size: 1.9rem;
+  min-width: 12rem;
+  border-radius: 10px;
+  box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.7);
+  background-image: url('images/tom1.png');
+  background-size: cover;
+  color: whitesmoke;
+  font-family: cursive;
+  text-shadow: 2px 8px 4px rgba(0, 0, 0, 0.7);
+  cursor: pointer;
+  text-transform: capitalize;
+}
+
+.btn:hover {
+  color: pink;
+}
+
+.btn:active {
+  background-size: 105%;
+}
