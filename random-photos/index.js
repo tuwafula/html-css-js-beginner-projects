@@ -4,10 +4,10 @@ const containerEl = document.querySelector('.image-container');
 const btnEl = document.querySelector('.btn');
 
 btnEl.addEventListener('click', () => {
-  addImages();
+  addNewImages();
 });
 
-const addImages = function () {
+const addNewImages = function () {
   let imgCount = 10;
   for (let i = 0; i < imgCount; i++) {
     const newImg = document.createElement('img');

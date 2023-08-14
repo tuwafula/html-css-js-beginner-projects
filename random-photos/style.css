@@ -40,3 +40,7 @@ body {
   border: none;
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
+
+.btn:hover {
+  opacity: 0.9;
+}
